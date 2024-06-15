@@ -20,7 +20,7 @@ const App = () => {
         <AdminMenu setView={setView} /> {/* Pass setView to AdminMenu */}
         <main className="main-container">
           {view === 'home' && <HeroSection />}
-          {/* {view === 'help' && <HelpSection />} */}
+          {view === 'help' && <HelpSection />}
           {view === 'upload' && <FileUpload />}
           {/* Add other views as needed */}
         </main>
