@@ -97,11 +97,13 @@
 const express = require("express");
 const axios = require("axios");
 const bodyParser = require("body-parser");
+const cors = require("cors"); // Import the cors package
 require("dotenv").config();
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
+app.use(cors()); // Use the cors middleware
 app.use(bodyParser.json());
 
 const authHeader = process.env.AUTH_HEADER;
@@ -159,25 +161,10 @@ app.post("/generate-video", async (req, res) => {
       Authorization: authHeader,
     });
 
-    console.log("Final Response:", finalResponse);
+    // console.log("Final Response:", finalResponse);
 
     const videoUrl = finalResponse.result_url;
-
-    res.send(`
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <title>Video Player</title>
-      </head>
-      <body>
-        <h1>Your Video</h1>
-        <video width="640" height="480" controls>
-          <source src="${videoUrl}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </body>
-      </html>
-    `);
+    res.json({ videoUrl });
   } catch (error) {
     console.error(
       "Error:",
