@@ -1,0 +1,110 @@
+/* FileUploadForm.css */
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form container */
+  .form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width:500px;
+  }
+  
+  /* Input fields */
+  .input-field,
+  .select-field {
+    width: 250px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Upload button */
+  .upload-button input[type="file"] {
+    display: none;
+  }
+  
+  .upload-button label {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .upload-button label:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Uploaded files section */
+  .upload-section {
+    background-color: #f0f0f0;
+    width: 1000px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upload-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Topic files section */
+  .topic-files {
+    margin-top: 20px;
+  }
+  
+  .topic-files h3 {
+    color: #666;
+  }
+  
+  /* File list */
+  .file-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .file-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .file-list li:last-child {
+    border-bottom: none;
+  }
+  
