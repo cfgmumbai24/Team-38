@@ -20,4 +20,5 @@ from django.urls.conf import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('videos/', include('videos.urls')),
+    path('search/', include('search.urls')),
 ]

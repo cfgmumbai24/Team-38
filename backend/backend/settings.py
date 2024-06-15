@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'videos',
     'corsheaders',
     'rest_framework',
+    'search',
 ]
 
 MIDDLEWARE = [
