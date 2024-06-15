@@ -13,7 +13,7 @@ import string
 import requests
 class FilterView(APIView):
     def get(self, request):
-        query="loan help"
+        query=request.data.get('query')
         print(query)
         df = pd.read_csv('videos.csv')
         print(df.head())
@@ -48,6 +48,6 @@ class FilterView(APIView):
             print(f"Title: {recommended_video['title']}")
             print(f"Description: {recommended_video['description']}")
             print(f"Transcription: {recommended_video['transcriptionAsText']}")
-            return Response(recommended_video['transcriptionAsText'])
+            return Response({'title':recommended_video['title'],'transcription':recommended_video['transcriptionAsText']})
         
         return call()
