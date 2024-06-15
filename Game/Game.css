@@ -1,0 +1,107 @@
+/* src/Game.css */
+
+.game-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .question-container {
+    margin-bottom: 20px;
+  }
+  
+  .question-text {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .options-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .option {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .option img {
+    cursor: pointer;
+    width:500px;
+    height:500px;
+    transition: transform 0.2s;
+  }
+  
+  .option:hover {
+    transform: scale(1.1);
+  }
+  
+  .option-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .feedback.correct {
+    color: #28a745;
+    background-color: #d4edda;
+  }
+  
+  .feedback.incorrect {
+    color: #dc3545;
+    background-color: #f8d7da;
+  }
+  
+  .btn-donate {
+      height:100px;
+      width:300px;
+      margin-top:60px;
+    --clr-font-main: pink;
+    --btn-bg-1: pink;
+    --btn-bg-2: pink;
+    --btn-bg-color: pink;
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: black;
+    box-shadow: 0px 0px 20px rgba(216, 55, 194, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(146, 28, 117, 0.5), inset -4px -4px 8px rgba(216, 19, 200, 0.35);
+  }
+  
+  .btn-donate:hover {
+    background-position: right top;
+  }
+  .question-text{
+      margin-bottom:70px;
+      font-size:70px;
+  }
+  .btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+      transition: linear;
+    }
+  }
+  
