@@ -1,0 +1,49 @@
+/* src/components/HeroSection/HeroSection.css */
+.hero-section {
+    background-color: #faf3e0;
+    padding: 50px 20px;
+    text-align: left;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-image {
+    max-width: 300px;
+    margin-right: 50px;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+    margin: 0 0 30px;
+  }
+  
+  .hero-stats {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-item p:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
