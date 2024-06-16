@@ -41,7 +41,8 @@
 }
 
 .send-button {
-  padding: 0.5rem 1rem;
+  padding: 8px;
+  margin: 5px;
   background-color: #007bff;
   color: white;
   border: none;
